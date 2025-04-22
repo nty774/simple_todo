@@ -17,7 +17,7 @@ export const createNewTodo = async (req: Request, res: Response) => {
 export const getTodos = async (req: Request, res: Response) => {
   try {
     const todos = await Todo.find();
-    res.status(200).json({ message: "All todo fetched.", todos});
+    res.status(200).json({ message: "All todo fetched.", todos });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Something went wrong." });
@@ -39,10 +39,10 @@ export const deleteTodo = async (req: Request, res: Response) => {
   const { todoId } = req.params;
   try {
     await Todo.findByIdAndDelete(todoId);
-    res.status(500).json({ message: "Todo has been deleted." });
+    res.status(200).json({ message: "Todo has been deleted." });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Something went wrong." });
+    res.status(200).json({ message: "Something went wrong." });
   }
 };
 
