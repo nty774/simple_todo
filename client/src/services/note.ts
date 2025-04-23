@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Note } from "../types/note";
+// import { Note } from "../types/note";
 
 let API_URL = "";
 if (import.meta.env.VITE_MODE === "development") {
