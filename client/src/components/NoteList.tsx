@@ -60,15 +60,15 @@ const NoteList = () => {
     setEditId(id);
   };
 
-  const handleUpdateNote = async (id: string) => {
-    setEditMode(true);
-    try {
-      updateNote(id, msg);
-      makeRefresh();
-    } catch (error) {
-      throw new Error("Fail to update note.");
-    }
-  };
+  // const handleUpdateNote = async (id: string) => {
+  //   setEditMode(true);
+  //   try {
+  //     updateNote(id, msg);
+  //     makeRefresh();
+  //   } catch (error) {
+  //     throw new Error("Fail to update note.");
+  //   }
+  // };
 
   return (
     <div>

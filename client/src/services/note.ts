@@ -7,7 +7,7 @@ if (import.meta.env.VITE_MODE === "development") {
 }
 if (import.meta.env.VITE_MODE === "production") {
   API_URL = import.meta.env.VITE_API_URL!;
-} 
+}
 
 console.log("API ...", API_URL);
 
